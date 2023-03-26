@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css"/>
+</head>
+ 
+<body>
+<!--Header-->
+    <header class="header">
+    <a href="#" class="logo" ><i class="fas fa-paw"></i>EA Zoo</a>
+    <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#animal">Animals</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="icons">
+     <div id="login-btn" alt="Login" class="fas fa-user"></div>
+     <div id="signup-btn" alt="Sign up" class="fas fa-clipboard"></div>
+     <div id="menu-btn" alt="Menu" class="fas fa-bars"></div>
+    </div>
+
+    <!--Login Form-->
+    <form class="login-form">
+
+        <h3>Login Form</h3>
+
+        <input type="email" id="logemail" placeholder="Email" class="box">
+        <input type="password" id="logpass" placeholder="Password" class="box">
+        <div class="remember">
+            <input type="checkbox" id="remember me">
+            <label for="remember-me">Remember Me</label>
+        </div>
+        <a href="#" onclick="logincheck()" class="btn">Login</a>
+     </form>
+       <!--Sign up-->
+    
+    <form class="signup-form">
+
+        <h3>Sign Up Form</h3>
+        <input type="text" id="siname" placeholder="Full Name" class="box">
+        <input type="number" id="siage" placeholder="Age" class="box">
+        <input type="email" id="siemail" placeholder="Email" class="box">
+        <input type="password" id="sipass" placeholder="Password" class="box">
+        <input type="password" id="sipassc" placeholder="Confirm Password" class="box">
+
+        <a href="#" onclick="signupcheck()" class="btn">Sign Up</a>
+     </form>
+    </header>
+
+    
+    <!--Home-->
+
+    <section class="home" id="home">
+
+        <div class="content">
+            <h3>Observe the wonders<br>
+            of our exotic<br>zoo</h3>
+            <a href="#pricing" class="btn">See our zoo</a>
+        </div>
+        <img src="src/bottom_wave.png" class="wave">
+    </section>
+
+    <!--About-->
+ 
+    <section class="about" id="about">
+
+        <h2 class="deco-title">About us</h2>
+
+        <div class="box-container">
+
+            <div class="image">
+                <img src="src/about.png" alt="">
+            </div>
+
+            <div class="content">
+                <h3 class="title">We offer a range of entertainment options</h3>
+                <p>our zoo doesn't only offer animals but we also
+                    have a range of activites that are beneficial 
+                    and also entertaining. we thrive to educate the youth and also offer them a range of playful activites. our sole purpose is to leave you with unforgettable memories.   </p>
+                
+                <div class="icons-container">
+                    <div class="icons">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h3>we educate</h3>
+                    </div>
+                    <div class="icons">
+                        <i class="fas fa-bullhorn"></i>
+                        <h3>we play</h3>
+                    </div>
+                    <div class="icons">
+                        <i class="fas fa-thumbtack"></i>
+                        <h3>We give you memories</h3>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+ <!-- gallery -->
+
+ <section class="gallery" id="gallery">
+
+    <h2 class="heading">gallery</h2>
+
+    <div class="swiper gallery-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="src/gallery-1.jpg" >
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="src/gallery-2.jpg" >
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="src/gallery-3.jpg" >
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="src/gallery-4.jpg" >
+                </div>
+            </div>
+
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+    </div>
+
+</section>
+
+ <!-- animals -->
+
+ <section class="animal" id="animal">
+
+    <h2 class="heading">our animals</h2>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="src/animal_1.jpg" alt="">
+            <div class="content">
+                <h3>cameleon</h3>
+                <a href="#pricing" class="btn">visit us</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="src/animals_2.jpg" >
+            <div class="content">
+                <h3>zebra</h3>
+                <a href="#pricing" class="btn">visit us</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="src/animals_3.jpg" >
+            <div class="content">
+                <h3>giraffe</h3>
+                <a href="#pricing" class="btn">visit us</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="src/animals_4.jpg" >
+            <div class="content">
+                <h3>monkey</h3>
+                <a href="#pricing" class="btn">visit us</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="src/Ethiopian siskin.JPG" >
+            <div class="content">
+                <h3>birds</h3>
+                <a href="#pricing" class="btn">visit us</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="src/rhino.jpg" >
+            <div class="content">
+                <h3>rhino</h3>
+                <a href="#pricing" class="btn">visit us</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="src/lioness.jpg" >
+            <div class="content">
+                <h3>lioness</h3>
+                <a href="#pricing" class="btn">visit us</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="src/monkey.jpg" >
+            <div class="content">
+                <h3>ape</h3>
+                <a href="#pricing" class="btn">visit us</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- end -->
+
+<!-- banner -->
+
+<section class="banner">
+
+    <div class="row">
+        
+        <div class="content">
+            <h3>leave with unforgettable memories</h3>
+        <p>take the time to visit our zoo and explore
+             the wonders we offer. bring your family and friends so you can leave with joint memories that all of you will remember</p> 
+        </div>
+
+        <div class="image">
+            <img src="src/banner_1.png" alt="">
+        </div>
+        
+    </div>
+
+</section>
+
+
+
+<!-- pricing -->
+
+<section class="pricing" id="pricing">
+
+    <h2 class="heading">pricing</h2>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="src/pricing1.png" alt="">
+            <h3>normal individuals</h3>
+            <h4 class="price">200 Birr</h4>
+            <p>the entrance is from 2:00 to 10:00</p>
+        </div>
+
+        <div class="box">
+            <img src="src/pricing2.png" alt="">
+            <h3>students</h3>
+            <h4 class="price">100 Birr</h4>
+            <p>from kindergarden till collage.<br>the entrance is from 8:00 to 10:00</p>
+        </div>
+
+        <div class="box">
+            <img src="src/pricing1.png" alt="">
+            <h3>family pack</h3>
+            <h4 class="price">500 birr</h4>
+            <p>the limit is 10 people per family.<br>the entrance is from 8:00 to 10:00</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- contact -->
+
+<section class="contact" id="contact">
+
+    <h2 class="heading">contact</h2>
+
+    <form action="">
+
+        <div class="inputBox">
+            <input type="text" placeholder="name">
+            <input type="email" placeholder="email">
+        </div>
+
+        <div class="inputBox">
+            <input type="number" placeholder="number">
+            <input type="text" placeholder="subject">
+        </div>
+
+        <textarea id="mes" cols="30" rows="10" placeholder="message"></textarea>
+
+        <a onclick="mescheck()" class="btn">send message</a>
+
+    </form>
+
+</section>
+
+
+
+<!-- footer -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3><i class="fas fa-paw"></i>EA zoo</h3>
+            <p>visit us right now and leave we outstanding memories.
+
+            </p>
+            <p class="links"><i class="fas fa-clock"></i>monday - friday</p>
+            <p class="days">2:00 - 10:00</p>
+        </div>
+
+        <div class="box">
+            <h3>Contact Info</h3>
+            <a href="#" class="links"><i class="fas fa-phone"></i> +251-974-22-33-44</a>
+            <a href="#" class="links"><i class="fas fa-phone"></i> +251-909-11-55-66</a>
+            <a href="#" class="links"><i class="fas fa-envelope"></i> visit@eazoo.com</a>
+            <a href="#" class="links"><i class="fas fa-map-marker-alt"></i> Addis Ababa,Ethiopia</a>
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#home" class="links"> <i class="fas fa-arrow-right"></i>home</a>
+            <a href="#about" class="links"> <i class="fas fa-arrow-right"></i>about</a>
+            <a href="#gallery" class="links"> <i class="fas fa-arrow-right"></i>gallery</a>
+            <a href="#animal" class="links"> <i class="fas fa-arrow-right"></i>animal</a>
+            <a href="#pricing" class="links"> <i class="fas fa-arrow-right"></i>pricing</a>
+        </div>
+
+        <div class="box">
+            <h3>newsletter</h3>
+            <p>subscribe for latest updates</p>
+            <input type="email" id="subm" placeholder="Your Email" class="email">
+            <a  onclick="subscribe()" class="btn">subscribe</a>
+            <div class="share">
+                <a href="https://www.facebook.com/" class="fab fa-facebook-f"></a>
+                <a href="https://twitter.com/" class="fab fa-twitter"></a>
+                <a href="https://www.instagram.com/" class="fab fa-instagram"></a>
+                <a href="https://www.linkedin.com/" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="credit">&copy; 2022 EA Zoo</div>
+
+</section>
+
+
+
+
+
+
+<!-- end -->
+
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="interact.js"></script>
+</body>
+</html>
+
